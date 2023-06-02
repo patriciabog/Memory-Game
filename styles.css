@@ -6,51 +6,63 @@
 
 body {
     width: 100%;
+    background-color: #EEEEEE;
     font-family: sans-serif;
 }
 
 .header {
-  margin: 2rem;
-  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.5rem;
+ background-color: #0700d5f7;
+ opacity: 0.8;
 }
 
 .title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    color: #FCD307;
+    font-size: 1.8rem;
+    font-weight: bold;
+   
 }
 .subtitle {
     font-size: 0.8rem;
+    color: white;
+    margin: 1rem;
 }
 
 .main {
-    margin: 2rem;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .section1 {
-    background-color: aquamarine;
-    padding: 1rem;
+    margin-top: 9rem;
+    background-color: #9dbfcb;
+    padding: 0.5rem;
     border-radius: 8px;
 }
 
-.table{
-    width: 80%;
-}
+
 
 .section2 {
-    background-color: blueviolet;
-    padding: 1.5rem ;
+    background-color: #8BBCCC;
+    padding: 1rem ;
     margin-top: 2rem;
 }
 
 .button {
-    height: 100px;
-    width: 100px;
-    font-size: 40px;
+    background-color: #03045E;
+    height: 5rem;
+    width: 5rem;
+    font-size: 4rem;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -61,12 +73,13 @@ img{
 }
 
 .stadistics {
+    color: #455D7A;
     border: 1px solid white;
     height: 105px;
     border-radius: 8px;
     padding: 8px 20px;
     bottom: border-box;
-
+   font-size: 1.5rem;
 }
 
 .button:hover {
@@ -74,5 +87,7 @@ img{
 }
 
 .footer {
+    margin: 1rem;
+    color: #495579;
     text-align: start;
 }

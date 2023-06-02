@@ -34,11 +34,11 @@ console.log(numbers);
 function counterTime(){
    timeRegressionId = setInterval(()=> {
       time--;
-      timeShow.innerHTML = `Time left: ${Math.max(0,time)} seconds`;
+      timeShow.innerHTML = `🕐 Time left: ${Math.max(0,time)} seconds`;
 
       if (time <= 0) {
         clearInterval(timeRegressionId);
-        timeShow.innerHTML = `Time left: 0 seconds`;
+        timeShow.innerHTML = `🕐 Time left: 0 seconds`;
         blockCards();
         loseSound.play();
       }
@@ -81,13 +81,13 @@ function turn(id){
         card2.disabled = true;
         //Counter movements increment
         movements++;
-        movementsShow.innerHTML = `Movements: ${movements}`;
+        movementsShow.innerHTML = `📲 Number of moves: ${movements}`;
         if(firstResult == secondResult){
             //Counter cards opened
             cardTurned = 0;
             //Counter increase hits
          corrects++;
-         correctShow.innerHTML = `Corrects: ${corrects}`;
+         correctShow.innerHTML = `👍 Corrects: ${corrects}`;
          correctSound.play();
 
          }else{
@@ -104,9 +104,9 @@ function turn(id){
 
          if(corrects == 8) {
             clearInterval(timeRegressionId);
-            correctShow.innerHTML = `Corrects: ${corrects} 😱`;
+            correctShow.innerHTML = `👍 Corrects: ${corrects} 😱`;
             timeShow.innerHTML = `Fantastic! you did in only ${timeInitial-time} seconds`;
-            movementsShow.innerHTML = `Movements: ${movements} 😎`;
+            movementsShow.innerHTML = `📲 Number of moves: ${movements} 😎`;
              winSound.play();
           
          }
