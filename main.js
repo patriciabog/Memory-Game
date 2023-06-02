@@ -4,6 +4,7 @@ let movementsShow = document.getElementById('movements');
 let correctShow = document.getElementById('correct');
 let timeShow = document.getElementById('t-rest');
 
+
 let cardTurned = 0;
 let card1 = null;
 let card2 = null;
@@ -112,4 +113,37 @@ function turn(id){
          }
         
     }
+}
+//Function Reset
+
+function resetGame() {
+  // Restablecer todas las variables a sus valores iniciales
+  cardTurned = 0;
+  card1 = null;
+  card2 = null;
+  firstResult = null;
+  secondResult = null;
+  movements = 0;
+  corrects = 0;
+  timer = false;
+  time = 30;
+  timeInitial = time;
+
+  // Restablecer los elementos de visualización en el HTML
+  movementsShow.innerHTML = `Movements: ${movements}`;
+  correctShow.innerHTML = `Corrects: ${corrects}`;
+  timeShow.innerHTML = `Time left: ${time} seconds`;
+
+   // Restablecer las cartas a su estado inicial
+  for (let i = 0; i <= 15; i++) {
+    let card = document.getElementById(i);
+    card.innerHTML = '';
+    card.disabled = false;
+  }
+
+  // Reiniciar el temporizador si está en funcionamiento
+  clearInterval(timeRegressionId);
+
+  // Reiniciar el juego llamando a la función inicial
+  startGame();
 }

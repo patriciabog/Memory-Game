@@ -18,24 +18,28 @@ body {
   align-items: center;
   width: 100%;
   padding-top: 1.5rem;
- background-color: #0700d5f7;
- opacity: 0.8;
+  background-color: #F5EBEB;
+  opacity: 0.8;
+  
 }
 
 .title {
-    color: #FCD307;
-    font-size: 1.8rem;
+    color: #E25822;
+    font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
    
 }
 .subtitle {
-    font-size: 0.8rem;
-    color: white;
+    font-size: 0.9rem;
+    color: #495579;
+    text-align: center;
     margin: 1rem;
+    
 }
 
 .main {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +48,7 @@ body {
 }
 
 .section1 {
-    margin-top: 9rem;
+    margin-top: 10rem;
     background-color: #9dbfcb;
     padding: 0.5rem;
     border-radius: 8px;
@@ -60,8 +64,8 @@ body {
 
 .button {
     background-color: #03045E;
-    height: 5rem;
-    width: 5rem;
+    height: 4.6rem;
+    width: 4.6rem;
     font-size: 4rem;
     color: white;
     font-weight: bold;
@@ -75,11 +79,12 @@ img{
 .stadistics {
     color: #455D7A;
     border: 1px solid white;
-    height: 105px;
+    
+    
     border-radius: 8px;
-    padding: 8px 20px;
+    padding: 1rem;
     bottom: border-box;
-   font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .button:hover {
@@ -90,4 +95,15 @@ img{
     margin: 1rem;
     color: #495579;
     text-align: start;
+}
+.reset {
+    background-color: #E25822;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 1rem;
 }
