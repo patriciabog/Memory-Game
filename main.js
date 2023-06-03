@@ -13,7 +13,7 @@ let secondResult = null;
 let movements = 0;
 let corrects = 0;
 let timer = false;
-let time = 30;
+let time = 60;
 let timeInitial = time;
 let timeRegressionId = null;
 
@@ -126,7 +126,7 @@ function resetGame() {
   movements = 0;
   corrects = 0;
   timer = false;
-  time = 30;
+  time = 60;
   timeInitial = time;
 
   // Restablecer los elementos de visualización en el HTML
