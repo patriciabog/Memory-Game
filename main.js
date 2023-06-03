@@ -117,7 +117,7 @@ function turn(id){
 //Function Reset
 
 function resetGame() {
-  // Restablecer todas las variables a sus valores iniciales
+  // Reset all variables to their initial values
   cardTurned = 0;
   card1 = null;
   card2 = null;
@@ -129,21 +129,21 @@ function resetGame() {
   time = 60;
   timeInitial = time;
 
-  // Restablecer los elementos de visualización en el HTML
+  // Reset the display elements in the HTML
   movementsShow.innerHTML = `Movements: ${movements}`;
   correctShow.innerHTML = `Corrects: ${corrects}`;
   timeShow.innerHTML = `Time left: ${time} seconds`;
 
-   // Restablecer las cartas a su estado inicial
+   // Reset cards to their initial state
   for (let i = 0; i <= 15; i++) {
     let card = document.getElementById(i);
     card.innerHTML = '';
     card.disabled = false;
   }
 
-  // Reiniciar el temporizador si está en funcionamiento
+  // Reset the timer if it is running
   clearInterval(timeRegressionId);
 
-  // Reiniciar el juego llamando a la función inicial
+  // Restart the game by calling the initial function
   startGame();
 }
