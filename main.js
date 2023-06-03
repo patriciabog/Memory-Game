@@ -105,8 +105,8 @@ function turn(id){
 
          if(corrects == 8) {
             clearInterval(timeRegressionId);
-            correctShow.innerHTML = `👍 Corrects: ${corrects} 😱`;
-            timeShow.innerHTML = `Fantastic! you did in only ${timeInitial-time} seconds`;
+            correctShow.innerHTML = `👍 Corrects: ${corrects} 🎯`;
+            timeShow.innerHTML = `🕐 Fantastic! you did in only ${timeInitial-time} seconds`;
             movementsShow.innerHTML = `📲 Number of moves: ${movements} 😎`;
              winSound.play();
           
