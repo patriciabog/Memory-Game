@@ -16,7 +16,7 @@ Find pairs of Planets every click you can listen a sound game and sound if you f
 ## Screenshots 🖥
 
 
-![Memory game](https://i.postimg.cc/rmTzLfg7/Screenshot-2023-06-03-at-13-47-35.png){:width="300px"}
+![Memory game](https://i.postimg.cc/rmTzLfg7/Screenshot-2023-06-03-at-13-47-35.png)
 
 ## Demo ↘️
 
