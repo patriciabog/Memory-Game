@@ -17,9 +17,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 1.5rem;
+ 
   background-color: #F5EBEB;
-  opacity: 0.8;
+  
 }
 
 .title {
@@ -43,18 +43,15 @@ body {
     margin-top: 2rem;
    }
    .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 0 2rem;
    }
 }
 
 @media all and (min-width: 1200px) {
-    .title {
-        font-size: 3rem;
-        margin-top: 2.3rem;
-    }
-
+ 
     .subtitle {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         padding: 0 2rem;
     }
 }
@@ -74,15 +71,15 @@ body {
 }
 
 .section1 {
-    margin-top: 11rem;
+    margin-top: 10rem;
     background-color: #9dbfcb;
     padding: 0.5rem;
     border-radius: 8px;
 }
 .button {
     background-color: #03045E;
-    height: 4.6rem;
-    width: 4.6rem;
+    height: 4.5rem;
+    width: 4.5rem;
     font-size: 4rem;
     color: white;
     font-weight: bold;
@@ -110,7 +107,7 @@ img {
 @media all and (min-width: 768px) {
 
     .section1 {
-        margin-top: 15rem;
+        margin-top: 10rem;
         padding: 1rem;  
      }
 
@@ -136,14 +133,14 @@ img {
             flex-direction: row;
         }
     .section1 {
-        margin-top: 18rem;
+        margin-top: 10rem;
         padding: 1.2rem;
     }
 
     .button {
-        height: 9.5rem;
-        width: 9.5rem;
-        font-size: 8.7rem;
+        height: 8rem;
+        width: 8rem;
+        font-size: 7.5rem;
     }
 
     .section2 {
