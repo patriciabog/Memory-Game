@@ -49,7 +49,7 @@ function counterTime(){
 //Function stop showing cards
    function blockCards() {
         for (let i = 0; i <=15; i++){
-            let cardBlocked = document.getElementById(i);
+          let cardBlocked = document.querySelector(`#button${i}`);
             cardBlocked.innerHTML = `<img src="./images/${numbers[i]}.png" alt="">`;
             cardBlocked.disabled = true;
         }
@@ -68,7 +68,7 @@ function turn(id){
 
     if(cardTurned == 1){
         //show the first number
-        card1 = document.getElementById(id);
+        card1 = document.querySelector(`#button${id}`);
         firstResult = numbers[id];
         card1.innerHTML = `<img src="./images/${firstResult}.png" alt="">`;
         clickSound.play();
@@ -76,7 +76,7 @@ function turn(id){
         card1.disabled = true;
 
     }else if(cardTurned == 2){
-        card2 = document.getElementById(id);
+      card2 = document.querySelector(`#button${id}`);
         secondResult = numbers[id];
         card2.innerHTML = `<img src="./images/${secondResult}.png" alt="">`;
         card2.disabled = true;
@@ -136,7 +136,7 @@ function resetGame() {
 
    // Reset cards to their initial state
   for (let i = 0; i <= 15; i++) {
-    let card = document.getElementById(i);
+    let card = document.querySelector(`#button${i}`);
     card.innerHTML = '';
     card.disabled = false;
   }
