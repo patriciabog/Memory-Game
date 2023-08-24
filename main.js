@@ -1,8 +1,8 @@
 'use strict';
 //with document html
-let movementsShow = document.getElementById('movements');
-let correctShow = document.getElementById('correct');
-let timeShow = document.getElementById('t-rest');
+let movementsShow = document.querySelector('#movements');
+let correctShow = document.querySelector('#correct');
+let timeShow = document.querySelector('#t-rest');
 
 
 let cardTurned = 0;
